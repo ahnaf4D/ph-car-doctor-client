@@ -25,6 +25,11 @@ const Services = () => {
           <Service key={service._id} service={service}></Service>
         ))}
       </div>
+      <div className='flex justify-center mt-5'>
+        <button className='btn btn-error text-white text-xl '>
+          More Services
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 const Service = ({ service }) => {
   const { img, title, price } = service;
@@ -16,13 +17,11 @@ const Service = ({ service }) => {
             <FaLongArrowAltRight className='text-3xl' />
           </button>
         </div>
-        {/* <div className='card-actions justify-end'>
-          <div className='badge badge-outline'>Fashion</div>
-          <div className='badge badge-outline'>Products</div>
-        </div> */}
       </div>
     </div>
   );
 };
-
+Service.propTypes = {
+  service: PropTypes.object,
+};
 export default Service;

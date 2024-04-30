@@ -12,7 +12,6 @@ const Signup = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, email, password);
-    console.log(name, email, password);
     createUser(email, password)
       .then((usrCredential) => {
         const user = usrCredential.user;
@@ -75,7 +74,7 @@ const Signup = () => {
                 </label>
               </div>
               <div className='form-control mt-6'>
-                <button className='btn btn-primary'>Login</button>
+                <button className='btn btn-primary'>Sign up</button>
               </div>
             </form>
             <p className='my-4 text-center'>

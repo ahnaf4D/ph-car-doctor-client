@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../../assets/logo.svg';
+import { useContext } from 'react';
+import { AuthContext } from '../../../Providers/AuthProvider';
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogout = () => {
+    logOut()
+      .then(() => alert('Success! You Sign out'))
+      .catch((error) => {
+        console.log(`${error}`);
+      });
+  };
   const menu = (
     <>
       <li>
@@ -9,15 +19,16 @@ const Nav = () => {
       <li>
         <Link>About</Link>
       </li>
-      {/* <li>
-        <Link>Services</Link>
-      </li>
-      <li>
-        <Link>Blog</Link>
-      </li>
-      <li>
-        <Link>Contact</Link>
-      </li> */}
+      {user && (
+        <>
+          <li>
+            <Link to='/bookings'>Bookings</Link>
+          </li>
+          <button onClick={handleLogout} className='btn btn-error'>
+            Logout
+          </button>
+        </>
+      )}
     </>
   );
   return (

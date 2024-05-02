@@ -14,7 +14,7 @@ const Service = ({ service }) => {
           <p className='text-2xl font-medium text-orange-500'>
             Price : ${price}
           </p>
-          <Link to={`/checkout/${_id}`}>
+          <Link to={`/book-services/${_id}`}>
             {' '}
             <button className='btn btn-error text-white'>Book Now</button>
           </Link>

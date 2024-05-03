@@ -73,8 +73,7 @@ app.patch('/api/bookings/:id', async (req, res) => {
 
 - Provided links to code snippets for implementing real-time updates of user orders on the client side.
 
-  - [Code 01](https://github.dev/ahnaf4D/ph-car-doctor-client-homePage/tree/main/src/Pages/BookingDetails)
-  - [Code 02](https://github.dev/ahnaf4D/ph-car-doctor-client-homePage/tree/main/src/Pages/BookingDetails)
+  - [Code](https://github.dev/ahnaf4D/ph-car-doctor-client-homePage/tree/main/src/Pages/BookingDetails)
 ## Complete Source Code
 - [Client Side](https://github.com/ahnaf4D/ph-car-doctor-client-homePage/)
 - [Server Side](https://github.com/ahnaf4D/ph-car-doctors-server)
